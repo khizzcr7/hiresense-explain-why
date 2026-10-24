@@ -1,0 +1,148 @@
+{
+  "backend": "local-heuristic",
+  "score": 100,
+  "verdict": "strong fit",
+  "requirementVerdicts": [
+    {
+      "requirement": "React",
+      "satisfied": true,
+      "confidence": "medium",
+      "evidence": [
+        {
+          "source": "cv-pdf",
+          "claim": "CV lists skill matching requirement \"React\"",
+          "detail": "Matched CV skill: React"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "requirement": "Node.js",
+      "satisfied": true,
+      "confidence": "medium",
+      "evidence": [
+        {
+          "source": "cv-pdf",
+          "claim": "CV lists skill matching requirement \"Node.js\"",
+          "detail": "Matched CV skill: Node.js"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "requirement": "REST APIs",
+      "satisfied": true,
+      "confidence": "high",
+      "evidence": [
+        {
+          "source": "cv-pdf",
+          "claim": "CV lists skill matching requirement \"REST APIs\"",
+          "detail": "Matched CV skill: REST APIs"
+        },
+        {
+          "source": "github",
+          "claim": "Public code backs requirement \"REST APIs\"",
+          "detail": "matched across repository set"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "requirement": "PostgreSQL",
+      "satisfied": true,
+      "confidence": "medium",
+      "evidence": [
+        {
+          "source": "cv-pdf",
+          "claim": "CV lists skill matching requirement \"PostgreSQL\"",
+          "detail": "Matched CV skill: PostgreSQL"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "requirement": "GitHub",
+      "satisfied": true,
+      "confidence": "medium",
+      "evidence": [
+        {
+          "source": "cv-pdf",
+          "claim": "CV lists skill matching requirement \"GitHub\"",
+          "detail": "Matched CV skill: GitHub"
+        }
+      ],
+      "gaps": []
+    }
+  ],
+  "niceToHaveVerdicts": [
+    {
+      "requirement": "TypeScript",
+      "satisfied": true,
+      "confidence": "medium",
+      "evidence": [
+        {
+          "source": "mixed",
+          "claim": "partial evidence for \"TypeScript\"",
+          "detail": "see source snapshots"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "requirement": "Docker",
+      "satisfied": false,
+      "confidence": "low",
+      "evidence": [],
+      "gaps": [
+        "No evidence for nice-to-have \"Docker\""
+      ]
+    }
+  ],
+  "gaps": [],
+  "reasoningTrace": [
+    "Extracted 12 skills from cv-pdf.",
+    "Analyzed 9 GitHub repositories for code evidence.",
+    "Evaluated 5 hard requirements and 2 nice-to-haves from job-description.",
+    "Reasoning steps kept per-claim provenance: every match cites its source.",
+    "Data federation: Zetaris gateway not configured; direct local federation used."
+  ],
+  "memory": {
+    "change": {
+      "previousScore": 100,
+      "scoreDelta": 0,
+      "previousVerdict": "strong fit",
+      "newlySatisfied": [],
+      "newlyMissing": [],
+      "repeatedGaps": [],
+      "previousTs": "2026-10-24T00:34:07.709Z"
+    },
+    "facts": {
+      "candidateName": "Demo Candidate",
+      "evaluations": 3,
+      "evidenceStrength": {
+        "React": {
+          "satisfiedCount": 3,
+          "lastConfidence": "medium"
+        },
+        "Node.js": {
+          "satisfiedCount": 3,
+          "lastConfidence": "medium"
+        },
+        "REST APIs": {
+          "satisfiedCount": 3,
+          "lastConfidence": "high"
+        },
+        "PostgreSQL": {
+          "satisfiedCount": 3,
+          "lastConfidence": "medium"
+        },
+        "GitHub": {
+          "satisfiedCount": 3,
+          "lastConfidence": "medium"
+        }
+      },
+      "recurringGaps": {},
+      "lastSeen": "2026-10-24T00:34:08.454Z"
+    }
+  }
+}
